@@ -1,0 +1,75 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./../../custom.scss"; 
+
+.home-main {
+    width: 100%; 
+    padding: 2.5rem 0; 
+    color: $font-dark; 
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: 5rem;
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 2.5rem 0; 
+        padding-bottom: 10rem;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-bottom: 10rem; 
+    }
+}
+.home-main-content {
+    width: 100%;
+    color: $font-dark; 
+
+    @include media-breakpoint-up(xs) {
+        padding: 2.5rem 0; 
+        padding-bottom: 2.5rem; 
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 5rem 0; 
+    }
+    @include media-breakpoint-up(xl) {
+        padding: 10rem 0; 
+    }
+}
+.home-main-content h4 {
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(lg) {
+        padding-right: 8rem;
+    }
+}
+.home-main-content h5 {
+    width: 100%; 
+
+    @include media-breakpoint-up(lg) {
+        padding-right: 8rem; 
+    }
+}
+.home-main-image {
+    width: 100%; 
+
+    @include media-breakpoint-up(xs) {
+        padding-top: 5rem; 
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 1rem 1rem;
+        padding-top: 2rem; 
+    }
+}
+.home-main-image img {
+    width: 100%; 
+}
+
+/*
+.hb-content h4 {
+    text-transform: uppercase;
+    text-shadow: 1px 1px lightgray;
+
+}
+.hb-content h5 {
+    padding-right: 3.5rem; 
+    text-shadow: 2px 2px lightgray;
+}
+*/ 
