@@ -1,8 +1,7 @@
 # example netlify.toml
 [build]
-  command = "next build"
-  functions = "out"
-  publish = "next build"
+  command = "next build && next export"
+  publish = "out"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
