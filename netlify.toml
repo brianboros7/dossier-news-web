@@ -1,6 +1,7 @@
-# example netlify.toml
+# netlify.toml
 [build]
   command = "next build && next export"
+  functions = "functions"
   publish = "out"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
@@ -13,7 +14,7 @@
   ## (optional) Settings for Netlify Dev
   ## https://github.com/netlify/cli/blob/master/docs/netlify-dev.md#project-detection
   #[dev]
-  #  command = "yarn dev" # Command to start your dev server
+  #  command = "yarn functions" # Command to start your dev server
   #  port = 3000 # Port that the dev server will be listening on
   #  publish = "dist" # Folder with the static content for _redirect file
 
