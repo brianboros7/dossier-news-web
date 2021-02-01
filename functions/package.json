@@ -1,0 +1,8 @@
+{
+    "name": "functions", 
+    "versions": "1.0.0",
+    "description": "Brian S. Boros Official Website",
+    "main": "test.js", 
+    "scripts": {}, 
+    "author": "Brian S. Boros"
+}
