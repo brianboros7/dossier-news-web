@@ -1,0 +1,25 @@
+.news-card-container {
+    width: 100%;
+    padding: 1px; 
+    text-align: center
+}
+
+.news-card {
+    display: inline-block;
+    margin: 5px; 
+    text-align: left;
+}
+
+.news-card-body {
+    padding: 1px;  
+}
+
+.news-card-img {
+    width: 60vw; 
+    height: 30vh; 
+    background-color: gray;
+}
+
+.text-padding {
+    padding: .25px 0; 
+}
