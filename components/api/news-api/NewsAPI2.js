@@ -15,7 +15,7 @@ function NewsAPI2() {
     }, [url]);
 
     const newsArticles = articles.map((article) => (
-        <Card className={styles["news-card"]} style={{ width: '20rem'}}>
+        <Card key={article.id} className={styles["news-card"]} style={{ width: '20rem'}}>
             <Card.Body className={styles["pnews-card-body"]}>
                 <Card.Img className={styles["news-card-img"]}></Card.Img>
                 <Card.Text className={["text-padding"]}>{article.publishedAt}</Card.Text>
