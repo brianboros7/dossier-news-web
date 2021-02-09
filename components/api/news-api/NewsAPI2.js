@@ -16,8 +16,8 @@ function NewsAPI2() {
         loadData()
     }, [url]);
 
-    const newsArticles = articles.map((article) => (
-        <Card key={article.id} className={styles["news-card"]} style={{ width: '20rem'}}>
+    const newsArticles = articles.map((article, index) => (
+        <Card key={index} className={styles["news-card"]} style={{ width: '20rem'}}>
             <Card.Body className={styles["pnews-card-body"]}>
                 <Card.Img src={article.urlToImage} className={styles["news-card-img"]}></Card.Img>
                 <Card.Text className={["text-padding"]}>{article.publishedAt}</Card.Text>
