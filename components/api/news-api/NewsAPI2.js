@@ -5,7 +5,7 @@ import styles from './NewsApi.module.css';
 function NewsAPI2() {
     const [articles, setArticles] = useState([]);
 
-    const url = 'http://newsapi.org/v2/top-headlines?' + 'country=us&' + 'apiKey=8b46af06015e43ba92196852f89974be';
+    const url = 'https://newsapi.org/v2/top-headlines?' + 'country=us&' + 'apiKey=8b46af06015e43ba92196852f89974be';
     const loadData = () => {
         fetch(url)
         .then(response => response.json())
