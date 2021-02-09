@@ -6,18 +6,20 @@ function NewsAPI2() {
     const [articles, setArticles] = useState([]);
 
     const url = 'http://newsapi.org/v2/top-headlines?' + 'country=us&' + 'apiKey=8b46af06015e43ba92196852f89974be';
-
-
-    useEffect(() => {
+    const loadData = () => {
         fetch(url)
         .then(response => response.json())
         .then(data => setArticles(data.articles))
+    }
+
+    useEffect(() => {
+        loadData()
     }, [url]);
 
     const newsArticles = articles.map((article) => (
         <Card key={article.id} className={styles["news-card"]} style={{ width: '20rem'}}>
             <Card.Body className={styles["pnews-card-body"]}>
-                <Card.Img className={styles["news-card-img"]}></Card.Img>
+                <Card.Img src={article.urlToImage} className={styles["news-card-img"]}></Card.Img>
                 <Card.Text className={["text-padding"]}>{article.publishedAt}</Card.Text>
                 <Card.Text className={["text-padding"]}>{article.author}</Card.Text>
 
