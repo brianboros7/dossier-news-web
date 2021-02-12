@@ -11,7 +11,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>News App</title>
-        <link rel="icon" href="/favicon.ico"cd  />
       </Head>
       <Header />
       <main className={styles.main}>
@@ -19,7 +18,7 @@ export default function Home() {
             <NYTimesApi /> 
         </section>
       
-      </main> 
+      </main>  
 
     </div>
   )
